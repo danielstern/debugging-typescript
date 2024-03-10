@@ -30,7 +30,7 @@ interface CartItem {
 function getItemsTotal(items : CartItem[]) : number {
   const prices = items.map(i => i.cost)
   let total = -1
-  debugger
+  // debugger
   for (const price of prices) {
     total += price
   }
