@@ -28,6 +28,7 @@ interface CartItem {
 }
 
 function getItemsTotal(items : CartItem[]) : number {
+  // if (items.length === 0) return 0
   const prices = items.map(i => i.cost)
   let total = -1
   // debugger
