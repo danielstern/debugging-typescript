@@ -28,13 +28,16 @@ interface CartItem {
 }
 
 function getItemsTotal(items : CartItem[]) : number {
+  console.info("Tabulating values")
   const prices = items.map(i => i.cost)
-  let total = -1
-  debugger
+  // let total = -1
+  let total = 0
   for (const price of prices) {
     total += price
   }
-  total += prices.reduce((a,b)=>a+b,0)
+  console.info("Calculated price", total)
+  // total += prices.reduce((a,b)=>a+b,0)
+  console.info("Returning total value", total)
   return total
 }
 

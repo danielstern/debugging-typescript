@@ -21,7 +21,7 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Debugging */ 
-    "sourceMap": false /*Always emits when debugging*/
+    "sourceMap": true /*Always emits when debugging*/
 
   },
   "include": ["src"],
